@@ -1,5 +1,5 @@
 <html>
-  <head><title>Scale Set Autoscale demo app</title></head>
+  <head><title>Spinnaker demo app - v1</title></head>
   <body>
     <?php $hostname = gethostname(); ?>
     <center>
