@@ -34,8 +34,8 @@
     }
   },
   "variables": {
-    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvmv2')]",
-    "dataDisk1VhdName": "datadisk1",
+    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'demovmv2')]",
+    "dataDisk1VhdName": "datadisk1v2",
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
     "OSDiskName": "osdiskv2",
@@ -47,7 +47,7 @@
     "publicIPAddressName": "myPublicIP",
     "publicIPAddressType": "Dynamic",
     "vmStorageAccountContainerName": "vhds",
-    "vmName": "MyUbuntuVMv2",
+    "vmName": "demovmv2",
     "vmSize": "Standard_D1",
     "virtualNetworkName": "MyVNET",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
