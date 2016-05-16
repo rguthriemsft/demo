@@ -1,0 +1,26 @@
+:doctype: book
+
+= Using Demo scripts
+
+Open a command line with the latest version of the https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/[azure-cli] installed.
+
+https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-connect/[Login] to your azure subscription
+
+[source,bash]
+----
+mkdir demo
+#Ensure you have git installed on you dev machine
+git clone git@github.com:rguthriemsft/demo.git
+cd demo
+
+azure config mode arm
+#Replace parameters in <PARAMETER_NAME> with your desired parameters
+azure group create -n <RESOURCE_GROUP_NAME> -l <LOCATION>
+azure group deployment create --name <DEPLOYMENT_NAME> --resource-group <RESOURCE_GROUP_NAME> --template-file <TEMPLATE_FILE_PATH> --parameters-file <PARAMETER_FILE_PATH>
+---
+
+Tested on:
+
+* Ubuntu 14.04 LTS
+* Windows 10
+
