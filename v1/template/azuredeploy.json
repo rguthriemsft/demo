@@ -35,7 +35,6 @@
   },
   "variables": {
     "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'demovmv1')]",
-    "dataDisk1VhdName": "datadisk1v1",
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
     "OSDiskName": "osdiskv1",
