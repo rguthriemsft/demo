@@ -17,7 +17,7 @@
     if ($_SERVER['REQUEST_METHOD'] == "GET")
     {
       $num = $_GET["num"];
-      for ($x = 0; $x <= $num * 6900000; $x++)
+      for ($x = 0; $x <= $num * 7000000; $x++)
       {
         $var = $num+1;
       }
